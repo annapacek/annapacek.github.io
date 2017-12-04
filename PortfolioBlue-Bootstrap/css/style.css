@@ -1,44 +1,69 @@
+/*General styling*/
+
 body {
-    font-family: "Roboto Slab", serif;
+    font-family: 'Roboto Slab', serif;
     color: #777777;
 }
 
-body .navbar {
+/*Each header h3, h4*/
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    font-weight: 700;
+}
+
+/*Each section*/
+#services,
+#portfolio,
+#my-team,
+#contact {
+    padding: 100px 0;
+}
+
+/*First paragraph in each section*/
+p:nth-child(2) {
+    font-family: 'Droid Serif', serif;
+}
+
+/*Navigation bar styling - start*/
+
+.navbar {
     background-color: transparent;
     border: none;
-    font-family: "Droid Serif", serif;
+    font-family: 'Droid Serif', serif;
 }
 
-body .navbar .navbar-header a {
+.navbar-brand {
     font-size: 25px;
-    color: #FFFFFF;
-    transition: all 0.5s;
 }
 
-body .navbar .navbar-header a:hover {
-    color: #0ed8d6;
-}
-
-body .navbar .navbar-collapse {
-    font-family: "Montserrat", sans-serif;
+.navbar-collapse {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
 
-body .navbar .navbar-collapse ul li a {
-    color: #FFFFFF;
+/*Font color for all links in nav bar*/
+#main-nav a {
+    color: white; 
     transition: all 0.5s;
 }
 
-body .navbar .navbar-collapse ul li a:hover {
-    color: #0ed8d6;
+#main-nav a:hover {
+    color: #0ed8d6; 
 }
 
-body .menu-scrolled {
+/*Class added on scroll*/
+.menu-scrolled {
     background-color: rgba(14, 216, 214, 0.8);
 }
 
-body #main-header {
-    background-image: url("../img/header/pictures_on_the_wall.jpg");
+/*Navigation bar styling - end*/
+
+/*Header styling - start*/
+
+#main-header {
+    background-image: url('../img/header/pictures_on_the_wall.jpg');
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -46,33 +71,33 @@ body #main-header {
     position: relative;
 }
 
-body #main-header #mask-header {
-    width: 100%;
+#mask-header {
+    width:100%;
     height: 100%;
     background-color: #333333;
     opacity: 0.5;
 }
 
-body #main-header #inner-header {
+#inner-header {
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 50%; 
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform:translate(-50%, -50%);
 }
 
-body #main-header #inner-header h2 {
-    font-family: "Droid Serif", serif;
-}
-
-body #main-header #inner-header h1 {
-    font-family: "Montserrat", sans-serif;
+#inner-header h1 {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     padding: 20px;
 }
 
-body #main-header #inner-header a {
-    font-family: "Montserrat", sans-serif;
+#inner-header h2 {
+    font-family: 'Droid Serif', serif;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     background-color: #0ed8d6;
     color: #FFFFFF;
@@ -81,32 +106,22 @@ body #main-header #inner-header a {
     transition: all 0.5s;
 }
 
-body #main-header #inner-header a:hover {
+.btn:hover {
     border: 2px solid #0ed8d6;
     background-color: #FFFFFF;
     color: #0ed8d6;
 }
 
-body #services {
-    padding: 100px 0;
-}
+/* Header styling - end */
 
-body #services #inner-services h3 {
-    font-family: "Montserrat", sans-serif;
-    color: #333333;
-    font-weight: 700;
-}
+/* Section services styling -start*/
 
-body #services #inner-services p:nth-child(2) {
-    font-family: "Droid Serif", serif;
-}
-
-body #services #inner-services .row {
+.row {
     width: 100%;
     margin: 60px 0;
 }
 
-body #services #inner-services .row .services-image {
+#inner-services .services-image {
     width: 50px;
     height: 50px;
     background-color: #0ed8d6;
@@ -116,150 +131,133 @@ body #services #inner-services .row .services-image {
     transition: all 1s;
 }
 
-body #services #inner-services .row .services-image .fa {
+#inner-services .services-image .fa {
     font-size: 25px;
     line-height: 50px;
     color: #FFFFFF;
     transition: all 1s;
 }
 
-body #services #inner-services .row .services-image .fa:hover {
-    transform: rotate(360deg);
-    color: #0ed8d6;
-}
-
-body #services #inner-services .row .services-image:hover {
+#inner-services .services-image:hover {
     background-color: #FFFFFF;
     border: 0.5px solid #0ed8d6;
 }
 
-body #services #inner-services .row h4 {
-    font-family: "Montserrat", sans-serif;
-    color: #333333;
-    font-weight: 700;
+#inner-services .services-image .fa:hover {
+    transform: rotate(360deg);
+    color: #0ed8d6;
 }
 
-body #portfolio {
-    padding: 100px 0;
+/* Section services styling - end */
+
+/* Section Portfolio styling - start */
+
+#portfolio {
     background-color: #F7F7F7;
 }
 
-body #portfolio h3 {
-    font-family: "Montserrat", sans-serif;
-    color: #333333;
-    font-weight: 700;
-}
-
-body #portfolio p:nth-child(2) {
-    font-family: "Droid Serif", serif;
-}
-
-body #portfolio .row figure {
+#portfolio figure {
     background-color: #FFFFFF;
     border: 10px solid #F7F7F7;
-}
+} 
 
-body #portfolio .row figure .image-outer {
+#portfolio .image-outer {
     overflow: hidden;
     height: 250px;
-}
+} 
 
-body #portfolio .row figure .image-outer .image {
+#portfolio .image {
     background-size: cover;
     height: 100%;
     transition: all 1s;
 }
 
-body #portfolio .row figure .image-outer .image .mask {
+#portfolio .image:hover {
+    transform: scale(1.2);
+}
+
+#portfolio .mask {
     background-color: rgba(14, 216, 214, 0.6);
     height: 100%;
     opacity: 0;
     transition: all 1s;
 }
 
-body #portfolio .row figure .image-outer .image .mask .fa {
+#portfolio .mask:hover {
+    opacity: 1;
+}
+
+#portfolio .fa {
     font-size: 80px;
     line-height: 250px;
     color: #FFFFFF;
 }
 
-body #portfolio .row figure .image-outer .image .mask:hover {
-    opacity: 1;
-}
-
-body #portfolio .row figure .image-outer .image:hover {
-    transform: scale(1.2);
-}
-
-body #portfolio .row figure .image-outer #first-port {
-    background-image: url(../img/portfolio/box_of_cookies.jpg);
-}
-
-body #portfolio .row figure .image-outer #second-port {
-    background-image: url(../img/portfolio/chaotic_paint.jpg);
-}
-
-body #portfolio .row figure .image-outer #third-port {
-    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
-}
-
-body #portfolio .row figure .image-outer #fourth-port {
-    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
-}
-
-body #portfolio .row figure .image-outer #fifth-port {
-    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
-}
-
-body #portfolio .row figure .image-outer #sixth-port {
-    background-image: url(../img/portfolio/typing_on_laptop.jpg);
-}
-
-body #portfolio .row figure .text-content {
+#portfolio .text-content {
     padding: 20px;
 }
 
-body #portfolio .row figure .text-content h4 {
-    font-family: "Montserrat", sans-serif;
-    color: #333333;
-    font-weight: 700;
+#first-port {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
 }
 
-body #my-team {
-    padding: 100px 0;
+#second-port {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
 }
 
-body #my-team h3 {
-    font-family: "Montserrat", sans-serif;
-    color: #333333;
-    font-weight: 700;
+#third-port {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
 }
 
-body #my-team p:nth-child(2) {
-    font-family: "Droid Serif", serif;
+#fourth-port {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
 }
 
-body #my-team .face {
+#fifth-port {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#sixth-port {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+/* Section Portfolio styling - end */
+
+/* Section My-team styling - start */
+
+#my-team .face {
     width: 200px;
-    height: 200px;
+    height: 200px; 
     background-size: cover;
     border-radius: 50%;
     display: inline-block;
 }
 
-body #my-team .text-content h4 {
-    font-family: "Montserrat", sans-serif;
-    color: #333333;
-    font-weight: 700;
+#team-photo1 {
+    background-image: url(../img/team/man-1.jpg);
 }
 
-body #my-team .text-content p {
-    font-family: "Roboto Slab", serif;
+#team-photo2 {
+    background-image: url(../img/team/man-2.jpg);
 }
 
-body #my-team .text-content .social .social-icon {
+#team-photo3 {
+    background-image: url(../img/team/woman-1.jpg);
+}
+
+#my-team .text-content p {
+    font-family: 'Roboto Slab', serif;
+}
+
+.team-description {
+    width: 80%;
+    margin: auto;
+}
+
+/*Social icon styling*/
+.social-icon {
     width: 40px;
-    height: 40px;
+    height: 40px; 
     margin: 0 5px 15px;
     border-radius: 50%;
     background-color: #222222;
@@ -267,105 +265,60 @@ body #my-team .text-content .social .social-icon {
     transition: all 0.5s;
 }
 
-body #my-team .text-content .social .social-icon .fa {
+.social-icon .fa {
     font-size: 20px;
     color: #FFFFFF;
     line-height: 40px;
 }
 
-body #my-team .text-content .social .social-icon:hover {
+.social-icon:hover {
     background-color: #0ed8d6;
 }
 
-body #my-team #team-photo1 {
-    background-image: url(../img/team/man-1.jpg);
-}
+/* Section My-team styling - end */
 
-body #my-team #team-photo2 {
-    background-image: url(../img/team/man-2.jpg);
-}
+/* Section Contact styling - start */
 
-body #my-team #team-photo3 {
-    background-image: url(../img/team/woman-1.jpg);
-}
-
-body #my-team .team-description {
-    width: 80%;
-    margin: auto;
-}
-
-body #contact {
-    padding: 100px 0;
+#contact {
     background-image: linear-gradient(rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)), url(../img/footer/world-map.jpg);
     background-size: cover;
     color: #FFFFFF;
 }
 
-body #contact h3 {
-    font-family: "Montserrat", sans-serif;
-    color: #333333;
-    font-weight: 700;
+#contact h3 {
     color: #FFFFFF;
 }
 
-body #contact p {
+#contact p {
     margin-bottom: 50px;
-    font-family: "Droid Serif", serif;
 }
 
-body #contact .inner-form input {
+.inner-form input {
     height: 50px;
 }
 
-body #contact .inner-form .form-control::placeholder {
+.form-control::placeholder {
     text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 5px;
 }
 
-body #contact .button {
+#contact .button {
     width: 100%;
 }
 
-body #contact .button .btn {
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    background-color: #0ed8d6;
-    color: #FFFFFF;
-    border: 2px solid #0ed8d6;
-    padding: 10px 25px;
-    transition: all 0.5s;
+#contact .btn {
     margin-top: 50px;
     padding: 20px;
 }
 
-body #contact .button .btn:hover {
-    border: 2px solid #0ed8d6;
-    background-color: #FFFFFF;
-    color: #0ed8d6;
-}
+/* Section Contact styling - end */
 
-body #footer {
+/* Section Footer styling - start */
+
+#footer {
     padding: 30px 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body #footer .social .social-icon {
-    width: 40px;
-    height: 40px;
-    margin: 0 5px 15px;
-    border-radius: 50%;
-    background-color: #222222;
-    display: inline-block;
-    transition: all 0.5s;
-}
-
-body #footer .social .social-icon .fa {
-    font-size: 20px;
-    color: #FFFFFF;
-    line-height: 40px;
-}
-
-body #footer .social .social-icon:hover {
-    background-color: #0ed8d6;
-}
+/* Section Footer styling - end */

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="../portfolio/font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!--  można podpiąć czcionki przez link do strony fontawesome, ale nie działa jak nie ma internetu  -->
+</head>
+
+<body>
+
+    <!-- nawigacja -->
+    <nav id="menu">
+        <!-- MENU działające jak checkbox -->
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
+        <ul>
+            <li class="menu-item"><a href="#about">o mnie</a></li>
+            <li class="menu-item"><a href="#skills">umiejętności</a></li>
+            <li class="menu-item"><a href="#portfolio">portfolio</a></li>
+            <li class="menu-item"><a href="#contact">kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- nagłówek -->
+    <header id="header">
+        <div id="headertext">
+            <h1 class="main headertext">Anna <span>Pacek</span></h1>
+            <h2 class="add headertext">Front-End Developer</h2>
+        </div>
+    </header>
+    
+    <!-- sekcja o mnie -->
+    <!-- div o id clear w strukturze przywraca poprawny flow dokumentu -->
+    <section id="about">
+        <h3 id="about-header">O <span>mnie</span></h3>
+        <figure id="photo">
+            <img class="photo" src="img/img/jan-nowak.jpg" alt="Anna Pacek zdjęcie">
+        </figure>
+        <article id="about-content">
+        <p class="about-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima at provident architecto quaerat earum eius repellat pariatur numquam, saepe laboriosam voluptate dolore, rerum aut quia similique facilis ipsa! Consequatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima at provident architecto quaerat earum eius repellat pariatur numquam, saepe laboriosam voluptate dolore, rerum aut quia similique facilis ipsa! Consequatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima at provident architecto quaerat earum eius repellat pariatur numquam, saepe laboriosam voluptate dolore, rerum aut quia similique facilis ipsa! Consequatur?</p>
+        </article>
+        <div class="clear"></div>
+    </section>
+    
+    <!-- sekcja umiejetnosci -->
+    <section id="skills">
+        <h3 id="skills-header">Moje <span>umiejętności</span></h3>
+        <p class="skills-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus maiores facere dignissimos, doloribus facilis sit, aliquid quibusdam impedit iste, consectetur inventore est numquam corporis, quam odit? Voluptas quia vero culpa.</p>
+        <div class="figures">
+        <figure>
+            <img src="img/icons/html5.png" alt="Ikona HTML5">
+            <figcaption>HTML5</figcaption>
+        </figure>
+        <figure>
+            <img src="img/icons/css3.png" alt="Ikona CSS3">
+            <figcaption>CSS3</figcaption>
+        </figure>
+        <figure>
+            <img src="img/icons/js.png" alt="Ikona JavaScript">
+            <figcaption>JavaScript</figcaption>
+        </figure>
+        <figure>
+            <img src="img/icons/jquery.png" alt="Ikona jQuery">
+            <figcaption>jQuery</figcaption>
+        </figure>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h3 id="portfolio-header">Moje <span>portfolio</span></h3>
+        <div id="portfolio-content">
+            <div id="portfolio-cont" class="cont1">
+                <div class="mask">
+                    <div class="border">
+                        <div class="text-cont">
+                           <div id="text-cont-inn">
+                            <h4>tekst</h4> <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illum ab sed dolores odit. Recusandae accusantium, id, iste quasi ad aliquam maxime nobis et adipisci quos ex hic qui quia!</p><br>
+                            <h5>Wykorzystane technologie:</h5><br>
+                            <p>HTML5, CSS3</p><br>
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio-cont" class="cont2">
+                <div class="mask">
+                    <div class="border">
+                        <div class="text-cont">
+                           <div id="text-cont-inn">
+                            <h4>tekst</h4> <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illum ab sed dolores odit. Recusandae accusantium, id, iste quasi ad aliquam maxime nobis et adipisci quos ex hic qui quia!</p><br>
+                            <h5>Wykorzystane technologie:</h5><br>
+                            <p>bla bla bla</p><br>
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio-cont" class="cont3">
+                <div class="mask">
+                    <div class="border">
+                        <div class="text-cont">
+                           <div id="text-cont-inn">
+                            <h4>tekst</h4><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illum ab sed dolores odit. Recusandae accusantium, id, iste quasi ad aliquam maxime nobis et adipisci quos ex hic qui quia!</p><br>
+                            <h5>Wykorzystane technologie:</h5><br>
+                            <p>HTML5, CSS3</p><br>
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div id="details">
+            <h3 id="contact-header">Anna <span>Pacek</span></h3>
+            <address class="conte">
+            ul. Makowskiego 18/101<br />
+            30-075 Kraków<br /><br>
+            tel: 781 660 883<br />
+            e-mail: <a href="mailto:annapacek1991@gmail.com"> annapacek1991@gmail.com</a><br>
+            </address>
+            <div id="conteicons">
+                <div class="innicon">
+<!--        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>          
+                  text transform uppercase
+                   
+                     -->
+                   
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="innicon">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </div>
+                <div class="innicon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div class="innicon">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div id="form">
+            <input class="input" type="text" name="name" id="name" placeholder="Imię i nazwisko"><br>
+            <input class="input" type="text" name="mail" id="mail" placeholder="E-mail"><br>
+            <textarea class="textarea" id="message" maxlength=1000 name="message" placeholder="Treść wiadomości"></textarea><br>
+            <input class="send" type="submit" value="WYŚLIJ"><br>
+        </div>
+        
+    </section>
+        <footer id="author">
+            <p>Copyright &copy Anna Pacek</p>
+        </footer>
+                         
+
+
+</body>
+
+</html>

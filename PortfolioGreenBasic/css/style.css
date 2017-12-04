@@ -1,0 +1,341 @@
+* {                                    /*ustawienia dla wszystkich elementów*/
+    font-family: 'Lato', sans-serif;
+    color: #291f1a;
+    margin: 0px;
+    box-sizing: border-box;            /*zeby calosc sie nie rozciagala po dodaniu paddingow i margin do sekcji*/
+}
+
+body {
+    width: 100%;
+}
+
+/*nawigacja*/
+#menu {
+    background-color: #FFFFFF;  /*transparent jeśli ma być przeroczyste*/
+    position: fixed;            /*przypina pasek menu do góry strony*/
+    text-align: right;          /*wyrównuje elementy do prawej strony*/
+    width: 100%;                /*szerokość menu na szerokość przeglądarki*/
+    z-index: 1;                 /*menu naw nad background image-pierwszenstwo                                 wyswietlania*/
+}
+
+#menu ul {
+    padding: 0px;             /*nie ma paddingu po lewej stronie, tworzył sie poprzez strukturę listy*/
+}
+
+#menu .menu-item {
+    display: inline-block;    /*elementy wyswietlane w linii, nie bloku*/
+    list-style: none;         /*brak kropki przy elemencie listy*/
+    padding: 20px;            /*powiększenie zakresu paska*/
+}
+
+/*element linku*/
+#menu .menu-item a {            
+    text-decoration: none;      /*brak podkreślenia w linku*/
+    color: #1ac056;             /*zielony kolor*/
+    padding: 20px;              /*zwiększenie powierzchni klikalnej linku*/
+}
+
+/*menu toogle*/
+#menu .toggle, #drop {
+    display: none;               /*ukrywamy label menu i checkboxa*/
+} 
+
+/*nagłówek*/
+#header {
+    height: 100vh;     /*100vh - 100% okna przegladarki, nie ustawiac wysokosci w inym miejscu!!!!!!*/
+    position: relative;    /*dla ustawienia tekstu nagłówka w pozycji absolutnej*/
+    background-image: url('../img/img/header-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;    /*caly element wypelniony grafika, grafika moze sie nie zmiescic*/
+}
+
+#headertext {
+    position: absolute;
+    width: 100%;  
+    text-align: center;        /*wycentrowanie elementu w poziomie*/
+    top: 30%;                  /*odsuniecie od góry*/
+}
+
+#header .headertext {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10vh;
+    font-weight: 100; 
+
+}
+
+#header .main {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+#header .headertext span {
+    color: #1ac056;
+    font-weight: 400;
+}
+
+/*stylowanie sekcji o mnie*/
+/*stylowanie zdjecia*/
+#about, 
+#skills,
+#portfolio {
+/*
+    width: 100%;
+    position: relative;
+*/
+    padding: 60px;
+}
+
+#about {
+    background-color: #f9fcfe;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.6);
+}
+
+#about-header,
+#skills-header,
+#portfolio-header,
+#contact-header {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#about-header span,
+#skills-header span,
+#portfolio-header span,
+#contact-header span {
+    color: #1ac056;
+    font-weight: 400;
+}
+
+#photo {
+    width: 50%;
+    margin: 0px;
+    float: left;
+    text-align: center;
+}
+
+#about-content {
+    width: 50%;
+    display: inline-block;
+}
+
+#photo .photo {
+    max-width: 50%;
+    border: 10px solid #ffffff;
+}
+
+ .clear {
+    clear: both;
+}
+
+#skills {
+    text-align: center;
+}
+
+#skills figure {
+    display: inline-block;
+    padding: 30px;
+}
+
+/**/
+
+#portfolio-cont {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 33.33333%;
+    float: left;
+    height: 350px;
+    /*font-size: 0; dzieki temu nie bedzie bialych granic miedzy obrazkami, jak jest float to nie trzeba, tylko potem trzeba pamietac o zamianie czcionki przy text kontencie*/
+    /*height, float*/
+}
+
+.cont1 {
+    background-image: url('../img/img/portfolio1.jpg');  
+}
+
+.cont2 {
+    background-image: url('../img/img/portfolio2.jpg');  
+}
+.cont3 {
+    background-image: url('../img/img/portfolio4.jpg');
+}
+
+.mask {
+    background-color: rgba(42,61,79, 0.8);
+    opacity: 0;
+    height: 100%;
+    padding: 10px;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.mask:hover {
+    opacity: 1;
+}
+/*robimy na niego hoover, opacity 1*/
+.border {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    text-align: center;
+}
+#text-cont-inn {
+    position: absolute;
+    margin: auto;
+    padding: 10px;
+    top: 50%;
+    transform:translateY(-50%);
+
+}
+
+
+.text-cont h4,
+.text-cont h5,
+.text-cont p {
+    height: 100%;
+    color: white;
+}
+
+.text-cont .fa {
+    color: #ffffff;
+    font-size: 26px;
+}
+/*drugi div niebieski, opacity:0, backgroundcolor: rgba, height:100%, padding
+trzeci div matka
+i czwarty div z contentem zeby go wycentrowac*/
+
+/* styling contact section*/
+
+#contact {
+    background-color: #213b50;
+    padding: 60px;
+}
+
+#details {
+    display: inline-block;
+    width: 50%;
+}
+
+#form {
+    display: inline-block;
+    width: 49%;
+}
+
+#contact-header {
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#details .conte {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#contact #details .conte a {
+    text-decoration: none;    /*brak podkreślenia w linku*/
+    color: #1ac056;            /*zielony kolor*/
+    padding: 20px;             /*zwiększenie powierzchni klikalnej linku*/
+    transition-duration: 1s;
+    transition-property: color;
+}
+
+#contact #details .conte a:hover {
+    text-decoration-line: underline;
+    color: #1ac056;
+}
+
+
+#form {
+    text-align: right;
+}
+
+#form .input,
+#form .textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: #2F4E78;
+    border: 0;
+    padding: 10px;
+    color: #ffffff; 
+}
+
+#form .textarea {
+    height: 70px;
+    font-family: "Consolas";
+    color: #ffffff;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+#form .input:focus, 
+#form .textarea:focus {
+    background-color: #4e708c;
+    color: #ffffff;
+    outline-color: #ffffff;
+}
+
+
+#form .send {
+    background-color: #1ac056;
+    color: #ffffff;
+    height: 40px;
+    width: 80px;
+} 
+
+#author {
+    background-color: #1F2C3D;
+    padding-left: 60px;
+}
+
+#author p {
+    color: white;
+}
+
+
+/*elementy w formularzu moze ustawic position relative, absolute?*/
+#conteicons {
+    margin-bottom: 30px;
+}
+#conteicons .innicon {
+    display: inline-block;
+ margin: 10px;
+    text-align: center;
+    
+   
+
+    /*height width*/
+    
+}
+
+#conteicons .innicon .fa {
+    color: #ffffff;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    padding-top:  5px;
+    text-align: center;
+}
+
+#conteicons .innicon .fa:hover {
+    color: #213b50;
+    border: 1px solid #213b50;
+    background-color: #FFFFFF;
+}
+
+
+
+

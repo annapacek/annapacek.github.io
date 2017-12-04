@@ -1,0 +1,99 @@
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+   
+    #portfolio-content,
+    #portfolio-content .cont3 {
+        width: 100%;
+    }
+    
+    #portfolio-content .cont1,
+    #portfolio-content .cont2 {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    #portfolio-content {
+        width: 100%;
+    }
+    
+    #portfolio-content .cont1,
+    #portfolio-content .cont2,
+    #portfolio-content .cont3 {
+        width: 100%;
+    }
+    #menu .toggle {
+        display: block;
+        background-color: #FFFFFF;
+        padding: 0 20px;
+        color: #1AC056;
+        line-height: 50px; /*moze byc inna bo to do centrowania*/
+        text-align: right;
+    }   
+    
+    #menu ul {
+        display: none; /*ukrywamy liste rozwijalna*/
+    }
+    
+    #menu #drop:checked + ul {
+        display: block; /*symulujemy klikniecie w checkboxa, jesli jest zaznaczony to pokaz ul*/
+    }
+    
+    #menu ul {
+        background-color: #FFFFFF;
+    }
+    
+    #menu .menu-item {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        padding-right: 20px;
+    }
+    
+    #menu .menu-item a {
+        color: #1AC056;
+        padding-right: 0;
+    }
+    
+    #about #photo,
+    #about #about-content {
+        width: 100%;
+        text-align: center;
+    }
+    #contact #contact-header,
+    #contact #details,
+    #contact #conteicons,
+    #contact #form {
+        width: 100%;
+        text-align:  center;
+    }
+    
+    
+    
+    
+    
+    
+}
+
+/*
+@media screen and (max-width: 568px) {
+    
+    #skills .figures {
+        width: 100%;
+    }
+    #skills .figures figure {
+        width: 49%;
+    }
+}
+*/
+    
+    
+/*768 - tutaj 3 do dwoch w sekcji umiejetnosci
+568 umiejetnosci po dwa na linie
+1200 dwa na gorze jeden na dole
+    
+    na najmiejszej maja byc pod soba*/
