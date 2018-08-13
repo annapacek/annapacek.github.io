@@ -1,0 +1,137 @@
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    color: #292929;
+    
+/*
+    background-image: url('../img/abstract-art-background-1040473.jpg');
+    box-sizing: border-box;
+    background-size: cover;
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.6);
+*/
+}
+
+
+.menu .search-item {
+    display: inline-block;   /*ulozenie elementu*/
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    border: 2px solid #dedede;    /*granica diva zawieraca pole search i button*/
+    border-radius: 5%;
+    transition: 0.5s;    /*na hover*/
+}
+
+.menu .search-item .search-inside {
+    border: none;        /*granica pojedynczych elementow*/
+    background-color: white;
+    padding: 10px;
+    color: #a8a8a8;  /*kolor ikonki search*/
+}
+
+.search-inside::placeholder {
+    color: #a8a8a8;  
+}
+
+.search-item:hover {
+    border: 2px solid #7b3289; /*hover na inpucie*/
+}
+
+.menu .search-item .search-inside:hover {   /*hover na buttonie*/
+    color: #7b3289;
+}
+
+.menu .search-item .search-inside:focus {     /*styl pola i tekstu po kliknieciu*/
+    color: #510E5E;
+    outline: none;
+}
+
+.menu ul {
+    padding: 25px 0px;        /*polozenie elementu*/
+    margin-left: 25px;
+    display: inline-block;
+}
+
+.menu .menu-item {
+    display: inline-block;
+}
+
+.menu-item a,
+.menu-item i {
+    font-weight: 700;         /*grubosc czcionki*/
+    text-decoration: none;    /*brak podkreslenia w linku*/
+    color: #777777;
+    padding: 0px 20px;
+}
+
+.menu-item a:hover {
+    color: #510E5E;
+}
+
+.menu-item .fas {
+    color: #510E5E;
+}
+
+#header {
+    background-image: url('../img/top-image.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 120px;
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: 150;
+    line-height: 100vh;
+    margin-left: 150px; 
+}
+
+#flights {
+    padding: 100px 280px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: 200;
+    font-size: 70px;
+    padding-bottom: 40px;
+}
+
+.section-text {
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.flight-icons {
+    display: inline-block;
+}
+
+.flight-icons img {
+    width: 33%;
+    height: 25%;
+}
+
+#parallax-image {
+    background-image: url('../img/air-atmosphere-blue-314726.jpg');
+    height: 120px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#parallax-image .mask {
+    width: 100%;
+    height: 100%;
+    background-color: #7b3289;
+    opacity: 0.5;
+}
+
+.description {
+    padding: 100px 280px;
+    text-align: center;
+}
+
+.gallery {
+    padding: 0px 100px;
+}
