@@ -134,4 +134,23 @@ h2 {
 
 .gallery {
     padding: 0px 100px;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.city-figure {
+    width: 33.3%;
+    height: 305px;
+    text-align: center;
+}
+
+.city-figure img {
+    width: 80%;
+    height:80%;
+    object-fit: cover;
+}
+
+.city-figure figacaption {
+    display: block;
+    padding-top: 10px;
 }
