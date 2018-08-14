@@ -11,6 +11,12 @@
 */
 }
 
+.menu {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+}
 
 .menu .search-item {
     display: inline-block;   /*ulozenie elementu*/
@@ -37,7 +43,7 @@
     border: 2px solid #7b3289; /*hover na inpucie*/
 }
 
-.menu .search-item .search-inside:hover {   /*hover na buttonie*/
+.menu .search-item .fa:hover {   /*hover na buttonie*/
     color: #7b3289;
 }
 
@@ -76,6 +82,7 @@
     background-image: url('../img/top-image.jpg');
     background-size: cover;
     height: 100vh;
+    position: relative;
 }
 
 h1 {
@@ -87,9 +94,21 @@ h1 {
     margin-left: 150px; 
 }
 
+#find-a-flight {
+    position: absolute;
+    background-color: #510E5E;
+    width: 80%;
+    height: 100px;
+    z-index: 1;
+    left: 10%;
+    top: 603px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+}
+
 #flights {
     padding: 100px 280px;
     text-align: center;
+    position: relative;
 }
 
 h2 {
@@ -102,6 +121,7 @@ h2 {
 .section-text {
     font-size: 20px;
     padding-bottom: 40px;
+    text-align: justify;
 }
 
 .flight-icons {
@@ -143,14 +163,96 @@ h2 {
     height: 305px;
     text-align: center;
 }
-
-.city-figure img {
-    width: 80%;
-    height:80%;
-    object-fit: cover;
+.city-figure figacaption {
+    font-weight: 700;
 }
 
-.city-figure figacaption {
-    display: block;
-    padding-top: 10px;
+.background {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.new-york {
+    background-image: url('../img/newyork.jpg');
+}
+
+.dubai {
+    background-image: url('../img/architectural-design-architecture-bay-316001.jpg');
+}
+
+.london {
+    background-image: url('../img/big-ben-bridge-castle-460672.jpg');
+}
+
+.paris {
+    background-image: url('../img/architecture-buildings-city-739407.jpg');
+}
+
+.amsterdam {
+    background-image: url('../img/amsterdam-architecture-bicycles-1187911.jpg');
+}
+
+.rioDeJaneiro {
+    background-image: url('../img/backlit-buildings-christ-811212.jpg');
+}
+
+.outern {
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+    transition: 0.8s;
+}
+
+.outern:hover {
+    transform: scale(1.2);
+}
+
+.mask {
+    opacity: 0;
+    background-color: rgba(81, 14, 94, 0.6);
+    height: 100%;
+    transition: 0.8s;
+    position: relative;
+    
+}
+
+.mask:hover {
+    opacity: 1;
+}
+
+.mask-btn {
+    color: #FFFFFF;
+    font-size: 25px;
+    padding: 5px;
+    background-color: transparent;
+    border: solid 2px #FFFFFF;
+    border-radius: 5%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.description .fa-heart {
+    color: #510E5E;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.description hr {
+    background-color: #510E5E;
+    border: none;
+    height: 2px;
+    width: 40%;
+    display: inline-block;
+    margin-bottom: 19px;
+}
+
+.description .left {
+    margin-right: 20px;
+}
+
+.description .right {
+    margin-left: 20px;
 }
